@@ -2,7 +2,7 @@
 
 [English](#english) | [日本語](#日本語)
 
-**Latest version: 1.0.0** — [Download from Releases](https://github.com/TRNSYSJP/WeatherDataMap/releases)
+**Latest version: 1.0.1** — [Download from Releases](https://github.com/TRNSYSJP/WeatherDataMap/releases)
 
 <img width="1031" alt="Weather Data Map Plugin 1.0.0" src="https://github.com/user-attachments/assets/aa6cd09b-9399-4113-8b8e-fc6ed94554c3" />
 
@@ -51,9 +51,11 @@ The default folders are relative to the TRNSYS folder (usually `C:\TRNSYS18`). F
 1. Download the latest release from [Releases](https://github.com/TRNSYSJP/WeatherDataMap/releases).
 2. Run the installer (`WeatherDataMap-Setup-<version>.exe`) and select the TRNSYS 18 folder (usually `C:\TRNSYS18`) as the destination.
 
-If a previous version (0.9.x) is installed, the installer uninstalls it automatically.
+If a previous version (0.9.x) is installed, the installer uninstalls it automatically. The plug-in folder of 0.9.x and 1.0.0 (`Studio\Plugin\WeatherDataMap`) is removed, and the plug-in is installed in `Studio\Plugin\Quattro\WeatherDataMap`.
 
 Note for 0.9.x users: the components have been moved to `Quattro` → `Weather Data Reading and Processing` in the Direct Access Toolbar.
+
+Note for 0.9.x and 1.0.0 users: because the plug-in folder has changed in 1.0.1, the plug-in button is not shown for the components placed with these versions (**Standard Format with Map** and **User Format with Map**). For each component, change **Plug-in path** on the **Comment** tab to `.\Studio\Plugin\Quattro\WeatherDataMap\WeatherDataMap.exe`, and save the project (see 2.3 of the manual).
 
 ### Usage
 
@@ -112,9 +114,11 @@ Weather Data Map は、TRNSYS 18 の Simulation Studio で使うプラグイン�
 1. [Releases](https://github.com/TRNSYSJP/WeatherDataMap/releases) から最新版をダウンロードします。
 2. インストーラー（`WeatherDataMap-Setup-<バージョン>.exe`）を実行し、インストール先に TRNSYS 18 のフォルダ（通常は `C:\TRNSYS18`）を指定します。
 
-以前のバージョン（0.9.x）がインストールされている場合は、インストーラーが自動でアンインストールします。
+以前のバージョン（0.9.x）がインストールされている場合は、インストーラーが自動でアンインストールします。0.9.x と 1.0.0 のプラグインのフォルダ（`Studio\Plugin\WeatherDataMap`）は削除し、`Studio\Plugin\Quattro\WeatherDataMap` にインストールします。
 
 0.9.x をお使いの方へ: コンポーネントは Direct Access Toolbar の `Quattro` → `Weather Data Reading and Processing` に移動しました。
+
+0.9.x と 1.0.0 をお使いの方へ: 1.0.1 でプラグインのインストール先が変わったため、これらのバージョンで置いたコンポーネント（**Standard Format with Map**、**User Format with Map**）では、プラグインのボタンが表示されなくなります。コンポーネントごとに、**Comment** のタブの **Plug-in path** を `.\Studio\Plugin\Quattro\WeatherDataMap\WeatherDataMap.exe` に変え、プロジェクトを保存してください（マニュアルの 2.3）。
 
 ### 使い方
 
